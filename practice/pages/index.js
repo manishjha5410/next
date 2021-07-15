@@ -26,4 +26,17 @@ let Home = () => {
     )
 }
 
-export default Home;
+let newHome = () => {
+    return (
+        <>
+            <h1>
+                Next Js Prerendering
+            </h1>
+            <Link href="/users">
+                <a>Users</a>
+            </Link>
+        </>
+    )
+}
+
+export default newHome;
