@@ -26,14 +26,6 @@ export async function getStaticPaths() {
     const res = await fetch('https://jsonplaceholder.typicode.com/posts');
     const data = await res.json();
 
-    // const paths = data.map(post => {
-    //     return {
-    //         params: {
-    //             postId: `${post.id}`
-    //         }
-    //     }
-    // })
-
     return {
         paths: [
             {
